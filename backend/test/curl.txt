@@ -1,0 +1,11 @@
+curl --location 'http://localhost:8000/get_courses' \
+--header 'Content-Type: application/json' \
+--data '{
+
+            "program": "مهندسی کامپیوتر برای ورودی های 1401 و ماقبل",
+           "term": 3,
+           "course": ["فیزیک ۲","مدارهای منطقی"],
+           "time": {
+             "یکشنبه": ["10:00-12:00","08:00-10:00"]
+           }
+         }'
